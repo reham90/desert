@@ -172,7 +172,7 @@ $(".accordion").click(function(){
   if($(window).width()<991){
     var owl = $('.brand');
     owl.owlCarousel({
-        margin: 38,
+        margin: 25,
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
@@ -232,13 +232,9 @@ new WOW().init();
 
 // search for mobile //
     $(".search-icon").click(function() {
-        $(".search-screen").addClass("active");
-    });
-
-    // Remove Active Class
-    $(".close-icon").click(function() {
-        $(".search-screen").removeClass("active");
-    });
+           $(".search-block").toggle();
+           $(".search-input").focus();
+         });
 
 // end search for mobile // 
 
