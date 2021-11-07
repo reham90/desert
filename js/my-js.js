@@ -140,7 +140,7 @@ $(".accordion").click(function(){
 
     var owl = $('.product');
     owl.owlCarousel({
-        margin: 30,
+       
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
@@ -150,12 +150,15 @@ $(".accordion").click(function(){
         navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
         responsive: {
             0: {
+                margin: 15,
                 items: 2
             },
             600: {
+               margin: 30,
                 items:2
             },
             1200: {
+               margin: 30,
                 items: 4
             }
 
@@ -169,35 +172,11 @@ $(".accordion").click(function(){
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // brands carousel //
-  if($(window).width()<991){
-    var owl = $('.brand');
-    owl.owlCarousel({
-        margin: 15,
-        nav: true,
-        rtl: document.dir == 'rtl' ? true : false,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
-        responsive: {
-            0: {
-                items: 2
-            },
-            600: {
-                items: 2
-            },
-            1200: {
-                items: 5
-            }
 
-        }
-    })
-  }
 
     var owl = $('.brand');
     owl.owlCarousel({
-        margin: 80,
+       
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
@@ -207,12 +186,15 @@ $(".accordion").click(function(){
         navText: ["<i class='far fa-angle-right'></i>", "<i class='far fa-angle-left'></i>"],
         responsive: {
             0: {
+               margin: 15,
                 items: 2
             },
             600: {
+               margin: 50,
                 items:2
             },
             1200: {
+               margin: 80,
                 items: 5
             }
 
