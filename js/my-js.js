@@ -172,7 +172,7 @@ $(".accordion").click(function(){
   if($(window).width()<991){
     var owl = $('.brand');
     owl.owlCarousel({
-        margin: 25,
+        margin: 15,
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,

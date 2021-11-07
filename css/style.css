@@ -10,7 +10,7 @@ position: relative;
 }
 
 html[dir="rtl"] .search-box i{
-  right: 17px;
+  right: 15px;
 }
 html[dir="rtl"] .search-button{
 
@@ -21,6 +21,9 @@ html[dir="rtl"] .flag{
 }
 html[dir="rtl"] .news-input-block i{
   right: 15px;
+}
+html[dir="rtl"] .news-text h2{
+  text-align: right;
 }
 html[dir="rtl"] .news-input button{
   margin-right: 7px;
@@ -151,8 +154,8 @@ html[dir="rtl"] .social-icons li:last-child{
   html[dir="rtl"] .cart-section li{
   margin-left: 22px;
 }
-html[dir="rtl"] .search-box input{
- 
+html[dir="rtl"] .search-block .search-box input{
+ margin-right: 15px;
 }
 html[dir="rtl"] .search-box i{
   right: 9px;
@@ -160,15 +163,11 @@ html[dir="rtl"] .search-box i{
 html[dir="rtl"] .search-box:after{
   right: 122px;
 }
-html[dir="rtl"] .drop-mobile{
 
-  }
   html[dir="rtl"] .language-2 i{
   padding-right: 7px;
 }
-html[dir="rtl"] .language-2 .dropdown-content a{
-  text-align: right;
-}
+
 
 
 html[dir="rtl"] .search-box input{
@@ -185,9 +184,7 @@ html[dir="rtl"] .search-mobile{
   right: -17px;
   top:0 !important;
 }
-html[dir="rtl"] .search-screen{
-   left: 0;
-}
+
 html[dir="rtl"] .close-icon{
   right: 40px;
 }
@@ -370,21 +367,19 @@ html[dir="ltr"] .social-icons li:last-child{
   }
 
 }
-html[dir="ltr"] .search-box input{
- 
+html[dir="ltr"] .search-block .search-box input{
+ margin-left: 15px;
 }
 html[dir="ltr"] .search-box i{
-  left: 9px;
+  left: 15px;
 }
-html[dir="ltr"] .drop-mobile{
-  
-  }
+html[dir="ltr"] .search-block .search-box i{
+left: 10px;
+}
   html[dir="ltr"] .language-2 i{
-  padding-right: 7px;
+  padding-left: 7px;
 }
-html[dir="ltr"] .language-2 .dropdown-content a{
-  text-align: left;
-}
+
 
 
 html[dir="ltr"] .accordion{
@@ -399,9 +394,7 @@ html[dir="ltr"] .footer{
 html[dir="ltr"] .search-mobile{
   left:-17px;
 }
-html[dir="ltr"] .search-screen{
-  left: 0;
-}
+
 html[dir="ltr"] .close-icon{
   right: 40px;
 }
@@ -445,6 +438,9 @@ html[dir="ltr"] .nav-nav ul li a,
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.search-block{
+  display: none;
 }
 .logo{
   width: 239px;
@@ -558,7 +554,7 @@ width: 117px;
  min-width: 140px;
  /* border-radius: 2px; */
  z-index: 9;
- padding: 4px;
+ padding:8.5px 4px;
  left: 50%;
  transform: translateX(-50%);
 }
@@ -583,9 +579,8 @@ width: 117px;
  font-size: 16px;
  font-weight: 500;
  text-align: center;
- padding: 10px 0;
- /* border-bottom: 1px solid; */
- /* border-color: rgb(242, 242, 242); */
+ padding: 7.5px 0 !important;
+ margin: 0 !important;
  transition: 0.5s;
 }
 .dropdown-content a:last-child{
@@ -764,7 +759,7 @@ top:-22px;
 
     z-index: 999;
     font-size: 16px;
-    top: -35px;
+    top: -69px;
 }
 .nav-list{
   padding: 0;
@@ -778,7 +773,7 @@ top:-22px;
     }
 .nav-nav ul{
   padding: 30px;
-  padding-top: 50px;
+  padding-top: 105px;
   }
 }
 
@@ -877,7 +872,7 @@ left: 41px;
   overflow: hidden;
   height: 20px;
   transition: 0.5s;
-  margin-top: 15px;
+  margin: 0 0 7px;
 }
 .pro-name:hover{
   color: var(--theme-color);
@@ -895,6 +890,7 @@ left: 41px;
  border:1px solid #e0e0e0;
   height: 260px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 .category-block img{
   transition: 0.5s;
@@ -951,7 +947,7 @@ left: -51px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7px;
+  
 }
 .price p{
   font-size: 17px;
@@ -1037,7 +1033,9 @@ width: 139px;
   justify-content: center;
   align-items: center;
 }
-
+.brand  .owl-stage-outer{
+  padding-bottom: 53px;
+}
 .brand .owl-nav{
     
    display: none;
@@ -1057,8 +1055,8 @@ width: 139px;
   width: 6px;
   height: 6px;
   background-color: rgb(194, 194, 194);
-  margin: 5px 13px;
-  margin-top: 93px;
+  margin: 5px;
+
   border-radius: 50%;
 }
 
@@ -1104,6 +1102,7 @@ width: 139px;
   color: #bdbdbd;
   position: relative;
   padding: 0 45px;
+  outline: none;
 }
 .news-input input::placeholder{
   font-size: 13px;
@@ -1334,6 +1333,9 @@ width: 139px;
 .language{
   display: none;
 }
+.language-2 .dropdown{
+  position: absolute;
+}
 .search-bar{
   padding-top: 10px;
   padding-bottom: 11px;
@@ -1373,8 +1375,9 @@ width: 139px;
 
 .drop-mobile{
   display: none;
-  box-shadow: none;
-  background: transparent;
+ left: 0;
+ right: 0;
+    transform: translateX(0);
   
 
 }
@@ -1411,6 +1414,7 @@ width: 139px;
 }
 .products h1{
   font-size: 20px;
+  margin-bottom: 33px;
 }
 .product .owl-nav{
   display: none;
@@ -1419,6 +1423,7 @@ width: 139px;
 .pro-name{
   font-size: 13px;
   text-align: center;
+  margin-bottom: 7px;
 }
 .small-banners{
   grid-template-columns: repeat(1,auto);
@@ -1433,7 +1438,7 @@ width: 139px;
 
 .price{
   flex-wrap: wrap;
-  margin-top: 15px;
+ margin-bottom: 7px;
 
 }
 .price p{
@@ -1450,7 +1455,7 @@ width: 139px;
    width: 96px;
   height: 26px;
   font-size: 10px;
-  margin-top: 15px;
+ 
 }
 .brands{
       padding-top: 113px;
@@ -1580,8 +1585,9 @@ width: 139px;
 .search-mobile{
   display: block;
       position: absolute;
-    top:2px;
+    top:0;
 }
+
 .ser-2{
   background: transparent !important;
   color: #fff !important;
@@ -1595,22 +1601,7 @@ width: 139px;
     cursor: pointer;
    
 }
-.search-screen{
-    position: fixed;
-    width: 100%;
-    height: 0;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-   
-    z-index: 9;
-    top: 50%;
-    transform: translateY(-50%);
-    overflow: hidden;
-    transition: .3s linear .3s;
-}
+
 
 
 .close-icon{
@@ -1628,15 +1619,7 @@ width: 139px;
   color: #fff;
 }
 
-.search-screen.active{
-    transition-delay: 0s;
-    height: 100vh;
-    z-index: 99;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    background: var(--theme-color);
-}
+
 .search-block{
  position: absolute;
     width: 100%;
@@ -1660,7 +1643,7 @@ width: 139px;
 }
 .category-block{
   height:156px;
- 
+ margin-bottom: 7px;
 }
 .product .owl-item img{
   width: 100%;
@@ -1677,12 +1660,14 @@ width: 139px;
   height: 150px;
   
 }
+
 .language-2{
-  margin-bottom: 59px;
+  position: absolute !important;
+  top:20px;
+  margin: 0;
+  padding: 0 !important;
 }
-.dropdown-content{
-  margin-top: -15px;
-}
+
 .search-button{
   width: 42px;
 }
