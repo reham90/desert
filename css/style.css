@@ -163,7 +163,9 @@ html[dir="rtl"] .search-box i{
 html[dir="rtl"] .search-box:after{
   right: 122px;
 }
-
+html[dir="rtl"] .nav-nav ul li{
+  padding: 0;
+}
   html[dir="rtl"] .language-2 i{
   padding-right: 7px;
 }
