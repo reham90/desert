@@ -1460,8 +1460,14 @@ width: 139px;
  
 }
 .brands{
-      padding-top: 113px;
-    padding-bottom: 82px;
+      padding:50px 0;
+   
+}
+.brand .owl-stage-outer{
+  padding-bottom: 0;
+}
+.dropdown-content{
+  margin-top: 15px;
 }
 .news-content{
   padding-top: 70px;
@@ -1472,7 +1478,7 @@ width: 139px;
 }
 .news-text h2{
   font-size: 45px;
-  text-align: center;
+  text-align: center !important;
 }
 .news-text p{
   text-align: center;
