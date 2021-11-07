@@ -193,7 +193,7 @@ new WOW().init();
 
 // search for mobile //
     $(".search-icon").click(function() {
-           $(".search-block").toggle();
+           $(".search-block-in-mobile").toggle();
            $(".search-input").focus();
          });
 
