@@ -82,31 +82,7 @@ $(".accordion").click(function(){
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-  if($(window).width()<991){
-    var owl = $('.slider');
-    owl.owlCarousel({
-        margin: 10,
-        nav: true,
-        rtl: document.dir == 'rtl' ? true : false,
-        loop: true,
-        autoplay: false,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1200: {
-                items: 1
-            }
 
-        }
-    })
-  }
 
 // start slider carousel //
    var owl = $('.slider');
@@ -115,18 +91,21 @@ $(".accordion").click(function(){
         nav: true,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
-        autoplay: true,
+       
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
         navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
         responsive: {
             0: {
+               autoplay: false,
                 items: 1
             },
             600: {
+               autoplay: true,
                 items: 1
             },
             1200: {
+               autoplay: true,
                 items: 1
             }
 
