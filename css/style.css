@@ -42,6 +42,7 @@ html[dir="rtl"] .cart-section li{
 }
 html[dir="rtl"] .cart-section li:last-child{
   margin-left: 0;
+  margin-right: 10px;
 }
 html[dir="rtl"] .language i{
   padding-right: 7px;
@@ -241,6 +242,7 @@ html[dir="ltr"] .cart-section li{
 }
 html[dir="ltr"] .cart-section li:last-child{
   margin-right: 0;
+  margin-left: 10px;
 }
 html[dir="ltr"] .language i{
   padding-right: 0;
