@@ -94,7 +94,7 @@ $(".accordion").click(function(){
        
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
+        navText: ["<i class='fas fa-angle-right right-arrow'></i>", "<i class='fas fa-angle-left left-arrow'></i>"],
         responsive: {
             0: {
                autoplay: false,
@@ -126,7 +126,7 @@ $(".accordion").click(function(){
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        navText: ["<i class='fas fa-angle-right'></i>", "<i class='fas fa-angle-left'></i>"],
+        navText: ["<i class='fas fa-angle-right right-arrow'></i>", "<i class='fas fa-angle-left left-arrow'></i>"],
         responsive: {
             0: {
                 margin: 15,
@@ -156,7 +156,7 @@ $(".accordion").click(function(){
     var owl = $('.brand');
     owl.owlCarousel({
        
-        nav: true,
+        nav: false,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
         autoplay: true,
